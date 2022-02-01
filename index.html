@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/js/splitting/dist/splitting.css">
     <link rel="stylesheet" href="/js/splitting/dist/splitting-cells.css">
+    <link rel="stylesheet" href="/js/slick/slick.css">
+    <link rel="stylesheet" href="/js/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -37,7 +39,10 @@
             <a href="#skills">Skills</a>
           </li>
           <li class="header-menu__item">
-            <a href="#portfolio">Works</a>
+            <a href="#history">History</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li class="header-menu__item">
             <a href="#contact">Contact</a>
@@ -122,11 +127,54 @@
           </div>
         </div>
       </section>
+      <section class="history has-label" data-anchor="history">
+        <div class="inner-section">
+          <div class="container">
+            <h2 class="split">Work <span class="text-secondary">History</span></h2>
+            <div class="history-holder">
+              <div class="work-history">
+                <div class="work-history__heading">
+                  <span>Internship</span>
+                  <h3>Spintech Software</h3>
+                </div>
+                <p class="work-history__date">June <span class="text-secondary">2017</span> - January <span class="text-secondary">2018</span></p>
+                <ul class="work-history__items">
+                  <li class="work-history__item">Collaborated with other developers to identify and alleviate number of bugs and errors in software.</li>
+                  <li class="work-history__item">Wrote clean, clear and well-tested code for various projects.</li>
+                  <li class="work-history__item">Created fundamental base of web programming.</li>
+                </ul>
+              </div>
+              <div class="work-history">
+                <div class="work-history__heading">
+                  <span>Wordpress Developer</span>
+                  <h3>Infoville</h3>
+                </div>
+                <p class="work-history__date">April <span class="text-secondary">2019</span> - June <span class="text-secondary">2021</span></p>
+                <ul class="work-history__items">
+                  <li class="work-history__item">Created and updated re-usable code libraries to streamline WordPress development cycle.</li>
+                  <li class="work-history__item">Leveraged strong understanding of WordPress core to manipulate admin and theme components.</li>
+                </ul>
+              </div>
+              <div class="work-history">
+                <div class="work-history__heading">
+                  <span>Frontend / Wordpress Developer</span>
+                  <h3>Upwork</h3>
+                </div>
+                <p class="work-history__date">December <span class="text-secondary">2021</span> -</p>
+                <ul class="work-history__items">
+                  <li class="work-history__item">Converted design assets into component-based HTML, CSS and JavaScript including slight animations.</li>
+                  <li class="work-history__item">Created powerful Content Management Systems to serve as interface for client.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="portfolio has-label" data-anchor="portfolio">
         <div class="inner-section">
           <div class="container">
             <h2 class="split">My <span class="text-secondary">Portfolio</span></h2>
-            <p class="gs_reveal gs_reveal_fromLeft">A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+            <p class="gs_reveal gs_reveal_fromLeft">A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a tip of iceberg compared to the entire list.</p>
             <div class="portfolio-items">
               <div class="portfolio-item gs_reveal gs_reveal_fromLeft">
                 <div class="image-holder">
@@ -169,6 +217,21 @@
                     <li>SASS Implementation</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+            <h3>What my <span class="text-secondary">clients</span> say</h3>
+            <div class="testimonial-items">
+              <div class="single-testimonial">
+                <p>"Fantastic freelancer and we hope to work with Tymur again and again. Great skills and a very good attitude, communication and patience."</p>
+                <p class="name">Tim Langford,  <span class="text-secondary">Upwork</span></p>
+              </div>
+              <div class="single-testimonial">
+                <p>"Great job! Went above and beyond what was expected. I can recommend this freelancer for your project."</p>
+                <p class="name">Jay Lim, <span class="text-secondary">Upwork</span></p>
+              </div>
+              <div class="single-testimonial">
+                <p>"Tymur finished the work 100% according to our specs in a timely manner. Would definitely hire him again."</p>
+                <p class="name">Gunnar Hafsteinsson, <span class="text-secondary">Upwork</span></p>
               </div>
             </div>
           </div>
@@ -238,6 +301,9 @@
               <a href="#skills">Skills</a>
             </li>
             <li class="footer-menu__item">
+              <a href="#history">History</a>
+            </li>
+            <li class="footer-menu__item">
               <a href="#portfolio">Work</a>
             </li>
             <li class="footer-menu__item">
@@ -285,6 +351,7 @@
     <script src="./js/particles/particles.min.js"></script>
     <script src="./js/splitting/dist/splitting.min.js"></script>
     <script src="./js/tagcloud.min.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
     <script src="./js/script.js" async defer></script>
   </body>
 </html>

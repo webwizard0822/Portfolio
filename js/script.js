@@ -302,12 +302,13 @@
       });
     });
 
-
-
-
-
-
-
+    $('.testimonial-items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      arrows: false,
+      dots: true,
+    });
   });
 
 
