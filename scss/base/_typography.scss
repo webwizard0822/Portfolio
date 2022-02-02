@@ -55,4 +55,7 @@ p {
 .subheading {
   font-family: 'Khand', sans-serif;
   font-size: 32px;
+  @include mq("tablet", max) {
+    font-size: 24px;
+  }
 }

@@ -20,9 +20,12 @@
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  @include mq("desktop-wide") {
-    padding: 0;
-    max-width: 998px;
+  max-width: 1030px;
+  @include mq("desktop", max) {
+    padding: 0 64px;
+  }
+  @include mq("tablet", max) {
+    padding: 0 10px;
   }
 }
 
@@ -170,6 +173,9 @@ section {
       margin: 0 0 16px;
       &.half-row {
         width: calc(50% - 8px);
+        @include mq("tablet", max) {
+          width: 100%;
+        }
       }
       &.full-row {
         width: 100%;

@@ -267,13 +267,23 @@
       'ACF', 'SCSS', 'ReactJS', 'Elementor',
       'Shopify', 'Photoshop', 'VueJS', 'Divi'
     ];
-    var tagCloud = TagCloud('.skill-cloud', skillTags, {
-      radius: 300,
-      maxSpeed: 'fast',
-      initSpeed: 'fast',
-      direction: 135,
-      keep: true
-    }); 
+    if (window.innerWidth < 768) {
+      var tagCloud = TagCloud('.skill-cloud', skillTags, {
+        radius: 150,
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+        direction: 135,
+        keep: true
+      }); 
+    } else {
+      var tagCloud = TagCloud('.skill-cloud', skillTags, {
+        radius: 300,
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+        direction: 135,
+        keep: true
+      }); 
+    }
 
     
     /*************************************
@@ -311,5 +321,9 @@
     });
   });
 
+  $('.hamburger').on('click', function () {
+    $(this).toggleClass('open');
+    $('.header-menu').toggleClass('open');
+  });
 
 })(jQuery);

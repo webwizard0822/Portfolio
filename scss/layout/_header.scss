@@ -10,11 +10,33 @@
   width: 100%;
   padding: 12px 0;
   z-index: 10;
+  .hamburger {
+    display: none;
+    @include mq("desktop", max) {
+      display: block;
+      margin-right: 16px;
+    }
+  }
+  @include mq("desktop", max) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include mq("tablet", max) {
+    padding: 0;
+  }
   &-logo {
     margin-left: 16px;
     font-size: 0;
+    @include mq("desktop", max) {
+      margin-left: 0;
+      z-index: 10;
+    }
     img {
       max-height: 64px;
+      @include mq("tablet", max) {
+        background: rgba(0, 0, 0, 0.37);
+      }
     }
   }
   &-menu {
@@ -23,6 +45,19 @@
     left: 30px;
     padding-left: 20px;
     transform: translateY(-60%);
+    @include mq("desktop", max) {
+      top: 0;
+      left: -180px;
+      width: 180px;
+      height: 100%;
+      transform: none;
+      padding: 120px 0 0 30px;
+      background: rgba(0, 0, 0, 0.87);
+      transition: all 0.3s ease-in-out;
+      &.open {
+        left: 0;
+      }
+    }
     &__item {
       position: relative;
       &::before {

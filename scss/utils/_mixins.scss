@@ -32,6 +32,12 @@
 // Typography mixins
 @mixin heading1() {
   font-size: 96px;
+  @include mq("tablet-wide", max) {
+    font-size: 80px;
+  }
+  @include mq("tablet", max) {
+    font-size: 64px;
+  }
 }
 @mixin heading2() {
   font-size: 64px;
